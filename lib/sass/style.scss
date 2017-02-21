@@ -1,0 +1,113 @@
+@mixin center ($width, $height, $padding-top, $padding-left) {
+    width: $width;
+    height: $height;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -($height/2 + $padding-top) + px;
+    margin-left: -($width/2 + $padding-left) + px;
+    padding: $padding-top + px $padding-left + px;
+}
+
+$main-color: #002255;
+$sub-color: #ddd;
+$m-font: #114477;
+
+html {
+    margin: 0px;
+    padding: 0px;
+    background: $main-color;
+}
+
+    h1 {
+        margin: 5px 0px;
+        color: $m-font;
+        font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+        font-size: 31px;
+    }
+
+.jr_content_page {
+    @include center(600, 600, 0, 30);
+
+    border-radius: 10px;
+    background: $sub-color;
+    position: relative;
+
+    h2, h1, h3 {
+        margin: 5px 0px;
+    }
+    h1 {
+        text-align: center;
+    }
+
+    button {
+        position: absolute;
+        right: 20px;
+        bottom: 20px; 
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+    &.jr_pdf {
+        height: auto;
+        padding: 20px 30px;
+    }
+}
+
+.jr_login {
+    @include center(800, 600, 10, 50);
+    background: #eee;
+    border-radius: 10px;
+    font-size: 20px;
+    overflow-y: auto;
+
+    p {
+        margin: 0px;
+    }
+    .center {
+        text-align: center;
+    }
+    .center_div {
+        display: flex;
+        justify-content: center;
+    }
+    .submit {
+        width: 150px;
+        margin-top: 10px;
+        background: #5E89B4;
+        background: #386A9C;
+        background: #5E89B4;
+        background-image: -webkit-linear-gradient(top, #5E89B4, #386A9C);
+        background-image: -moz-linear-gradient(top, #5E89B4, #386A9C);
+        background-image: -ms-linear-gradient(top, #5E89B4, #386A9C);
+        background-image: -o-linear-gradient(top, #5E89B4, #386A9C);
+        background-image: linear-gradient(to bottom, #5E89B4, #386A9C);
+        -webkit-border-radius: 28;
+        -moz-border-radius: 28;
+        border-radius: 28px;
+        border: none;
+        color: #eee;
+        &:hover {
+        cursor: pointer;
+          background: #80a1c2;
+          background-image: -webkit-linear-gradient(top, #80a1c2, #5786b5);
+          background-image: -moz-linear-gradient(top, #80a1c2, #5786b5);
+          background-image: -ms-linear-gradient(top, #80a1c2, #5786b5);
+          background-image: -o-linear-gradient(top, #80a1c2, #5786b5);
+          background-image: linear-gradient(to bottom, #80a1c2, #5786b5);
+        }
+    }
+    .input_block {
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0px auto;
+        input {
+            height: 35px;
+            font-size: 25px;
+        }
+    }
+}

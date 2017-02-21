@@ -1,0 +1,91 @@
+html {
+  margin: 0px;
+  padding: 0px;
+  background: #002255; }
+
+h1 {
+  margin: 5px 0px;
+  color: #114477;
+  font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Arial, Helvetica, sans-serif;
+  font-size: 31px; }
+
+.jr_content_page {
+  width: 600;
+  height: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -300px;
+  margin-left: -330px;
+  padding: 0px 30px;
+  border-radius: 10px;
+  background: #ddd;
+  position: relative; }
+  .jr_content_page h2, .jr_content_page h1, .jr_content_page h3 {
+    margin: 5px 0px; }
+  .jr_content_page h1 {
+    text-align: center; }
+  .jr_content_page button {
+    position: absolute;
+    right: 20px;
+    bottom: 20px; }
+  .jr_content_page textarea {
+    width: 100%;
+    height: 200px; }
+  .jr_content_page.jr_pdf {
+    height: auto;
+    padding: 20px 30px; }
+
+.jr_login {
+  width: 800;
+  height: 600;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -310px;
+  margin-left: -450px;
+  padding: 10px 50px;
+  background: #eee;
+  border-radius: 10px;
+  font-size: 20px;
+  overflow-y: auto; }
+  .jr_login p {
+    margin: 0px; }
+  .jr_login .center {
+    text-align: center; }
+  .jr_login .center_div {
+    display: flex;
+    justify-content: center; }
+  .jr_login .submit {
+    width: 150px;
+    margin-top: 10px;
+    background: #5E89B4;
+    background: #386A9C;
+    background: #5E89B4;
+    background-image: -webkit-linear-gradient(top, #5E89B4, #386A9C);
+    background-image: -moz-linear-gradient(top, #5E89B4, #386A9C);
+    background-image: -ms-linear-gradient(top, #5E89B4, #386A9C);
+    background-image: -o-linear-gradient(top, #5E89B4, #386A9C);
+    background-image: linear-gradient(to bottom, #5E89B4, #386A9C);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    border: none;
+    color: #eee; }
+    .jr_login .submit:hover {
+      cursor: pointer;
+      background: #80a1c2;
+      background-image: -webkit-linear-gradient(top, #80a1c2, #5786b5);
+      background-image: -moz-linear-gradient(top, #80a1c2, #5786b5);
+      background-image: -ms-linear-gradient(top, #80a1c2, #5786b5);
+      background-image: -o-linear-gradient(top, #80a1c2, #5786b5);
+      background-image: linear-gradient(to bottom, #80a1c2, #5786b5); }
+  .jr_login .input_block {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0px auto; }
+    .jr_login .input_block input {
+      height: 35px;
+      font-size: 25px; }

@@ -127,13 +127,13 @@ html {
 }
 
 .jr_logged_in {
-    position: absolute;
+    position: fixed;
     right: 0;
     bottom: 0;
     background: #ddd;
 
     p {
-        padding: 0px;
+        padding: 0px 5px;
         margin: 0px;
     }
 }

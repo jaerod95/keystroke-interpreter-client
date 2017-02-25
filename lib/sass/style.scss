@@ -74,7 +74,6 @@ html {
     @include center(800, 600, 10, 50);
     background: #eee;
     border-radius: 10px;
-    font-size: 20px;
     overflow-y: auto;
 
     p {
@@ -119,10 +118,19 @@ html {
         flex-direction: column;
         justify-content: space-between;
         margin: 0px auto;
+        p {
+                margin-top: 1px;
+        }
+
+        input[type="text"], input[type="password"] {
+            width: 100%;
+        }
+
         input {
             height: 35px;
             font-size: 25px;
         }
+
     }
 }
 
